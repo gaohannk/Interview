@@ -7,7 +7,7 @@ import java.util.HashSet;
  */
 public class FindElementinAnotinB {
 
-	public HashSet<Integer> findElementinAnotinB(int[] A, int[] B) {
+	public static HashSet<Integer> findElementinAnotinB(int[] A, int[] B) {
 		HashSet<Integer> res = new HashSet<>();
 		HashSet<Integer> bset = new HashSet<>();
 
@@ -19,5 +19,14 @@ public class FindElementinAnotinB {
 				res.add(A[i]);
 		}
 		return res;
+	}
+
+	public static void main(String[] args) {
+
+		int[] A = {1,2,5};
+		int[] B = {};
+		HashSet<Integer> res = findElementinAnotinB(A, B);
+		for (int num : res)
+			System.out.print(num + " ");
 	}
 }

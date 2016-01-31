@@ -16,13 +16,7 @@ public class OneEditDistance {
 
 	class FileCompare {
 		public boolean isDistanceZeroOrOne(IntFileIterator a, IntFileIterator b) {
-			while (a.hasNext() && b.hasNext()) {
-				int numa=a.next();
-				int numb=b.next();
-				if(a!=b){
-					
-				}
-			}
+			return false;
 		}
 	}
 }
