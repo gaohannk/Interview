@@ -1,7 +1,7 @@
 package yapstone;
 
 import java.util.Scanner;
-
+/* BST find present element **/
 public class ElementPresentinTree {
 	public static Node insert(Node node, int data) {
 		if (node == null) {
@@ -22,9 +22,9 @@ public class ElementPresentinTree {
 		if (root.data == value)
 			return 1;
 		if (value < root.data)
-			isPresent(root.left, value);
+			return isPresent(root.left, value);
 		else if (value > root.data)
-			isPresent(root.right, value);
+			return isPresent(root.right, value);
 		return 0;
 	}
 

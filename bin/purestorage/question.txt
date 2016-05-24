@@ -1,0 +1,8 @@
+Luke has just bought 7 disk drives and grouped them together into a single logical drive so he could back up all funny cat pictures from the internet. Luke's drive usage can be described as a sustained workload of 200,000 write operations per second with following distribution:
+1.	512 bytes - 20% of all operations
+2.	1024 bytes - 30% of all operations
+3.	4096 bytes - 40% of all operations
+16384 bytes - 10% of all operations
+
+Each write operation appends sequentially to an individual drive, and the load is evenly distributed among all drives. There is no compression, garbage collection, or redundancy elimination involved.
+Assuming each drive has a capacity of exactly 513 GiB (1 GiB = 1024 MiB; 1 MiB = 1024 KiB; 1 KiB = 1024 bytes), how soon will Luke's array be filled from completely empty to 86% (at that point, Luke should probably consider buying few more disks)? Please round the answer to minutes.

@@ -71,6 +71,6 @@ public class MotorCar {
 	}
 	public static void main(String[] args){
 		System.out.println(drive("AARRRAARA"));
-		System.out.println(driveTo(100));
+		System.out.println(driveTo(24));
 	}
 }

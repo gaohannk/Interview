@@ -1,4 +1,5 @@
 package google;
+
 /* Given a list which can can contain elements as well as lists, write an iterator to flatten a nested list. 
  * Please make this code better and suggest any improvements.
  * 
@@ -23,10 +24,6 @@ public class FlattenIterator implements Iterator {
 
 		iteratorStack = new Stack<Iterator>();
 		iteratorStack.push(list.iterator());
-	}
-
-	public void remove() {
-		/* Not implemented */
 	}
 
 	private void moveToNext() {
