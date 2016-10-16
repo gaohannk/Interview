@@ -8,9 +8,12 @@ public class CostChangeStr {
 		int num = Integer.parseInt(scan.nextLine());
 		int index = 0;
 		int res[] = new int[num];
-		while (num != 0) {
+		while (num-- != 0) {
 			String stra = scan.nextLine();
 			String strb = scan.nextLine();
+//			if(stra.length()==0){
+//				res[index++]=strb.length()+2;
+//			}
 			int dp[][] = new int[stra.length() + 1][strb.length() + 1];
 			dp[0][0] = 0;
 			for (int i = 0; i <= stra.length(); i++) {
@@ -39,9 +42,7 @@ public class CostChangeStr {
 					dp[i][j] = optimal + 2;
 				}
 			}
-			res[index] = dp[stra.length()][strb.length()];
-			index++;
-			num--;
+			res[index++] = dp[stra.length()][strb.length()];
 		}
 		for (int i=0;i<res.length;i++){
 			System.out.println(res[i]);

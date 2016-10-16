@@ -12,7 +12,7 @@ package qumulo;
 public class BSTProordertoPostorder {
 
 	public String getBSTProordertoPostorder() {
-		
+		return "";
 	}
 
 }

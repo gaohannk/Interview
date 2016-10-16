@@ -28,5 +28,7 @@ public class MaxLessThanCurrentinArray {
 			}
 
 		}
+		return root.count;
 	}
+
 }
